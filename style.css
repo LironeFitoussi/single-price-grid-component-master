@@ -17,7 +17,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1.6fr;
   width: 50vw;
-  height: 61vh;
+  height: 65vh;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;}
 
 h1, h2, h3, p {
@@ -106,9 +106,12 @@ h1, h2, h3, p {
 .aboutComp {
   border-radius: 0 0 .5rem 0;
   background-color: hsla(179, 62%, 43%, 0.8);
+  height: -webki;
 }
 
-.aboutComp > p {
+.aboutComp > ul {
+  list-style-type: none;
+  padding: 0;
   color: hsla(203, 44%, 93%, 0.7);
   line-height: 2.5vh;
   font-size: 14px;
@@ -117,7 +120,7 @@ h1, h2, h3, p {
 
 footer {
   position: absolute;
-  bottom: 8px;
+  bottom: 5px;
 }
 
 .attribution {

@@ -1,0 +1,58 @@
+body {
+    height: fit-content;
+}
+
+main {
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: fit-content;
+}
+
+.heading, .subCont, .aboutComp  {
+    padding: 2rem;
+}
+
+.heading {
+    height: fit-content;
+}
+.heading > h1 {
+    font-size: 4.5vw;
+    margin-bottom: 2vh;
+}
+
+.heading > h2 {
+    font-size: 4vw;
+}
+
+.heading > p {
+    font-size: 3vw;
+    line-height: 2.75vh;
+}
+
+.subCont {
+    height: 22vh;
+    border-radius: 0;
+}
+
+.subCont > h2, .aboutComp > h2 {
+    font-size: 18px;
+}
+
+.mainPrice > p {
+    font-size: 15px;
+}
+
+#signUpBtn {
+    height: 5vh;
+    font-size: 12px;
+}
+
+.aboutComp {
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.aboutComp > p {
+    width: 65%;
+}
