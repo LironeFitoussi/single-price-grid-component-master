@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Karla', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   background-color: hsl(204, 43%, 93%);;
 }
 
@@ -15,27 +15,48 @@ main {
   border-radius: .5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1.25fr;
   width: 50vw;
-}
+  height: 60vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;}
 
 h1, h2, h3, p {
   margin: 0;
 }
 
 .heading, .subCont, .aboutComp  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 3rem;
 }
 
 .heading {
+  display: flex;
+  flex-direction: column;
   border-radius: .5rem .5rem 0 0;
   background-color: #ffffff;
   grid-column-start: 1;
   grid-column-end: 3;
+  justify-content: space-between;
+  height: 17.5vh;
 }
 
 .heading > h1 {
   color: hsl(179, 62%, 43%);
+  font-size: 1.75vw;
+  margin-bottom: 2.75vh;
+}
+
+.heading > h2 {
+  font-size: 1.35vw;
+  color: hsl(71, 73%, 54%);
+  margin: 1.5vh 0;
+}
+
+.heading > p {
+  line-height: 3vh;
+  color: hsl(218, 22%, 67%);
 }
 
 .subCont {
@@ -43,11 +64,61 @@ h1, h2, h3, p {
   background-color: hsl(179, 62%, 43%);
 }
 
+.mainPrice > p {
+  font-size: 16px;  
+  color: hsla(203, 44%, 93%, 0.8);
+}
+
+.pricePerMonth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+}
+
+.pricePerMonth > h1 {
+  font-weight: 400;
+}
+
+.pricePerMonth > p {
+  color: hsla(203, 44%, 93%, 0.5);
+}
+
+.subCont > h2, .aboutComp > h2{
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+#signUpBtn {
+  background-color: hsl(71, 73%, 54%);
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: .5rem;
+  padding: 1.25vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 .aboutComp {
   border-radius: 0 0 .5rem 0;
   background-color: hsla(179, 62%, 43%, 0.8);
 }
- 
+
+.aboutComp > p {
+  color: hsla(203, 44%, 93%, 0.7);
+  line-height: 2.5vh;
+  font-size: 14px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 8px;
+}
 
 .attribution {
   font-size: 11px;
@@ -64,7 +135,7 @@ h1, h2, h3, p {
   /* ### Primary */
 
   /* - Cyan */
-  hsl(179, 62%, 43%);
+  color: hsl(179, 62%, 43%);
 
   /* - Bright Yellow */
   color: hsl(71, 73%, 54%);
